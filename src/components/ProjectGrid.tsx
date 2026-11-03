@@ -1,14 +1,16 @@
 import { ArrowUpRight } from 'lucide-react';
 
+const base = import.meta.env.BASE_URL;
+
 type P = { src: string; title: string; category: string; year: string; client: string };
 
 const projects: P[] = [
-  { src: '/img/g1.jpg', title: 'A Quiet Room',    category: 'Spatial Identity', year: '2026', client: 'WK Gallery' },
-  { src: '/img/g2.jpg', title: 'Terracotta Index',category: 'Monograph',        year: '2025', client: 'Zohari Ceramics' },
-  { src: '/img/g3.jpg', title: 'Noir 07',         category: 'Fragrance Branding',year: '2025', client: 'Maison Vĩ' },
-  { src: '/img/g4.jpg', title: 'In Low Light',    category: 'Film &amp; Direction', year: '2024', client: 'Ernest G.' },
-  { src: '/img/g5.jpg', title: 'Paper Architectures', category: 'Art Direction',year: '2024', client: 'Lach Studio' },
-  { src: '/img/g6.jpg', title: 'The Reading Room',category: 'Editorial System', year: '2023', client: 'Oleksandr Press' },
+  { src: `${base}img/g1.jpg`, title: 'A Quiet Room',    category: 'Spatial Identity', year: '2026', client: 'WK Gallery' },
+  { src: `${base}img/g2.jpg`, title: 'Terracotta Index',category: 'Monograph',        year: '2025', client: 'Zohari Ceramics' },
+  { src: `${base}img/g3.jpg`, title: 'Noir 07',         category: 'Fragrance Branding',year: '2025', client: 'Maison Vĩ' },
+  { src: `${base}img/g4.jpg`, title: 'In Low Light',    category: 'Film &amp; Direction', year: '2024', client: 'Ernest G.' },
+  { src: `${base}img/g5.jpg`, title: 'Paper Architectures', category: 'Art Direction',year: '2024', client: 'Lach Studio' },
+  { src: `${base}img/g6.jpg`, title: 'The Reading Room',category: 'Editorial System', year: '2023', client: 'Oleksandr Press' },
 ];
 
 export default function ProjectGrid() {

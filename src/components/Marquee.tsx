@@ -1,12 +1,14 @@
+const base = import.meta.env.BASE_URL;
+
 type Card = { src: string; title: string; tag: string; radius: string };
 
 const cards: Card[] = [
-  { src: '/img/p1.jpg', title: 'Mohn Atelier',   tag: 'Identity',   radius: 'rounded-tl-[100px]' },
-  { src: '/img/p2.jpg', title: 'Oslo Concrete',  tag: 'Art Direction', radius: 'rounded-tr-[100px] rounded-bl-[40px]' },
-  { src: '/img/p3.jpg', title: 'Objet No. 4',    tag: 'Packaging',  radius: 'rounded-[40px]' },
-  { src: '/img/p4.jpg', title: 'Form &amp; Chair',   tag: 'Catalogue',  radius: 'rounded-tl-[100px] rounded-br-[40px]' },
-  { src: '/img/p5.jpg', title: 'Issue 09',       tag: 'Print',      radius: 'rounded-tr-[100px]' },
-  { src: '/img/p6.jpg', title: 'Rue Neuve',      tag: 'Campaign',   radius: 'rounded-bl-[100px] rounded-tr-[40px]' },
+  { src: `${base}img/p1.jpg`, title: 'Mohn Atelier',   tag: 'Identity',   radius: 'rounded-tl-[100px]' },
+  { src: `${base}img/p2.jpg`, title: 'Oslo Concrete',  tag: 'Art Direction', radius: 'rounded-tr-[100px] rounded-bl-[40px]' },
+  { src: `${base}img/p3.jpg`, title: 'Objet No. 4',    tag: 'Packaging',  radius: 'rounded-[40px]' },
+  { src: `${base}img/p4.jpg`, title: 'Form &amp; Chair',   tag: 'Catalogue',  radius: 'rounded-tl-[100px] rounded-br-[40px]' },
+  { src: `${base}img/p5.jpg`, title: 'Issue 09',       tag: 'Print',      radius: 'rounded-tr-[100px]' },
+  { src: `${base}img/p6.jpg`, title: 'Rue Neuve',      tag: 'Campaign',   radius: 'rounded-bl-[100px] rounded-tr-[40px]' },
 ];
 
 export default function Marquee() {
